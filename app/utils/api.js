@@ -1,13 +1,8 @@
 const axios = require('axios');
 
-const id = 'YOUR_CLIENT_ID';
-const sec = 'YOUR_CLIENT_SECRET';
-const params = '?client_id' + id + '&client_secret=' + sec;
-
-var instance = axios.create({
+const instance = axios.create({
     baseURL: 'https://api.github.com/',
-    timeout: 1000,
-    headers: {"Authorization": "token e88e5a05b8a9daa6562377c10b661f596168aaf3"}
+    //headers: {"Authorization": "token YOUR AUTH TOKEN"}
 });
 
 function getProfile(username) {
